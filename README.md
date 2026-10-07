@@ -4,3 +4,8 @@
 Project scenerio : This project simulates a secure Azure environment for a global company operating across multiple regions. The company needs centralized identity management with role-based access for employees, managers, and executives, secure networking between regional offices, and compliance with data protection regulations such as GDPR, which requires certain data to stay within specific geographic regions.
 
 What I built :
+- Created three EntraID Security groups (Employees-Global, Managers-Global, Executives-Global) to represent company access tiers.
+- Created two resource groups across regions (rg-global-company-uk in UK South, rg-global-company-india in Central India) to simulate a multinational company footprint.
+- Configured RBAC role assignments on both resource groups — Reader for employees, Contributor for managers, Owner for executives — mirroring real-world tiered access control.
+- Documented IAM configuration with screenshots for both regions (see docs/screenshots/)
+- 
