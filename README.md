@@ -8,4 +8,4 @@ What I built :
 - Created two resource groups across regions (rg-global-company-uk in UK South, rg-global-company-india in Central India) to simulate a multinational company footprint.
 - Configured RBAC role assignments on both resource groups — Reader for employees, Contributor for managers, Owner for executives — mirroring real-world tiered access control.
 - Documented IAM configuration with screenshots for both regions (see docs/screenshots/)
-- 
+- Created isolated virtual networks per region (vnet-uk in UK South, vnet_india in Central India) with dedicated subnets, laying the network foundation for regional offices.
