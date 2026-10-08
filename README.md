@@ -18,3 +18,4 @@ What I built :
 - Secured RDP on the India VM by limiting the inbound rule to a single trusted IP address, the same hardening applied to the UK VM.
 - Hit an Azure Policy block while deploying the India VM (the tag requirement rejected the VNet), and resolved it with a time-limited policy exemption instead of disabling the policy.
 - Created an architecture diagram (draw.io) showing Entra ID, both regions, resource groups, VNets and VMs (see docs/architecture.png).
+- Verified remote access by connecting to vm-uk-employee001 over RDP from macOS and running hostname and systeminfo, confirming the IP-restricted rule allows only my connection.
