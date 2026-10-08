@@ -12,3 +12,7 @@ What I built :
 - Deployed a virtual machine (vm-uk-employee001) and secured remote access by restricting the RDP inbound rule to a single trusted IP address instead of leaving it open to the internet.
 - Enforced governance with Azure Policy, requiring a `Department` tag on resources across both regional resource groups, including correcting an over-broad subscription-level scope to the proper resource group level.
 - Configured monitoring with a Log Analytics workspace and enabled VM insights, plus a CPU usage alert rule (threshold 80%) on the UK virtual machine for proactive performance monitoring
+- Deployed a second virtual machine (vm-ind-employee001) in Central India, so both regional offices now have a running VM. The UK VM (vm-uk-employee001) was deployed in East US because of free-trial size and region restrictions.
+- Secured RDP on the India VM by limiting the inbound rule to a single trusted IP address, the same hardening applied to the UK VM.
+- Hit an Azure Policy block while deploying the India VM (the tag requirement rejected the VNet), and resolved it with a time-limited policy exemption instead of disabling the policy.
+- Created an architecture diagram (draw.io) showing Entra ID, both regions, resource groups, VNets and VMs (see docs/architecture.png).
