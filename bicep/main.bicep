@@ -27,7 +27,7 @@ scope: rgIndia
 params: {
 vnetName: 'vnet_india'
 location: 'centralindia'
-addressPrefix: '10.0.2.0/16'
+addressPrefix: '10.1.0.0/16'
 subnetName: 'subnet-india-employees'
 }
 }
