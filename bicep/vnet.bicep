@@ -2,6 +2,7 @@ param vnetName string
 param location string
 param addressPrefix string
 param subnetName string
+param subnetPrefix string
 
 resource vnet 'Microsoft.Network/virtualNetworks@2024-01-01' = {
 name: vnetName
@@ -14,7 +15,7 @@ subnets: [
 {
 name: subnetName
 properties: {
-addressPrefix: '10.0.0.0/24'
+addressPrefix: subnetPrefix '10.0.0.0/24'
 }
 }
 ]
