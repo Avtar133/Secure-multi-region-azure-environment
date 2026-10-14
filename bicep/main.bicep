@@ -17,6 +17,7 @@ params: {
 vnetName: 'vnet-uk'
 location: 'uksouth'
 addressPrefix: '10.0.0.0/16'
+subnetPrefix: '10.0.0.0/24'
 subnetName: 'subnet-uk-employees'
 }
 }
@@ -28,6 +29,7 @@ params: {
 vnetName: 'vnet_india'
 location: 'centralindia'
 addressPrefix: '10.1.0.0/16'
+subnetPrefix: '10.1.0.0/24'
 subnetName: 'subnet-india-employees'
 }
 }
