@@ -6,7 +6,7 @@ location: 'uksouth'
 }
 
 resource rgIndia 'Microsoft.Resources/resourceGroups@2024-03-01' = {
-name: 'rg-global-company-India'
+name: 'rg-global-company-india'
 location: 'centralindia'
 }
 
